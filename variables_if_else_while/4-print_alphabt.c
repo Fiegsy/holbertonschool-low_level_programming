@@ -2,20 +2,20 @@
 /**
  * main - print alphabets
  *
- * Return: always (0)
- *
+ * Return: always 0 (Success)
  */
+
 int main(void)
+{
+char c;
 
-char ch = 'a';
-while (ch <= 'z')
-
-if (ch == 'e' || ch == 'q')
-ch++;
-putchar(ch);
-ch++;
+c = 'a';
+while (c <= 'z') 
+{
+if ((c != 'q' && c != 'e') && c <= 'z')
+	putchar(c);
+c++;
 }
 putchar ('\n');
-
 return (0);
 }
