@@ -12,6 +12,7 @@ int main(void)
 	while (alphabets <= '9')
 	{
 		putchar (alphabets);
+		alphabets++;
 	}
 	putchar ('\n');
 	return (0);
