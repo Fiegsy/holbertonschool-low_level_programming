@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints alph in
+ * main - alpha rev
  *
  * Return: (0)
  *
@@ -10,10 +10,10 @@ int main(void)
 	char alphabets = 'z';
 
 	while (alphabets >= 'a')
-{	
-	putchar (alphabets);
+{
+	putchar(alphabets);
 	alphabets--;
 }
-	putchar('\n');
-	return (0);
+        putchar('\n');
+	return(0);
 }
