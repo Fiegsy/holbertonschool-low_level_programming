@@ -6,12 +6,13 @@
  */
 int main(void)
 {
-	int alphabets;
-	alphabets = '0'
+char alphabets = 'z';
 
-	while (alphabets <= '9')
-	alphabets++;
+while (alphabets >= 'a')
+{	
+putchar(alphabets);
+alphabets--;
 }
-        putchar(''\n);
-	return (0);
+putchar('\n');
+return (0);
 }
