@@ -2,20 +2,22 @@
 /**
  * main - print alphabets
  *
- * Return: always 0 (Success)
+ * Return: always (0)
+ *
  */
 
 int main(void)
 {
-char c;
+	char alphabet = 'a';
 
-c = 'a';
-while (c <= 'z') 
-{
-if ((c != 'q' && c != 'e') && c <= 'z')
-	putchar(c);
-c++;
-}
-putchar ('\n');
-return (0);
+	while (alphabet <= 'z')
+	{
+		if (alphabet != 'q' && alphabet != 'e')
+		{
+			putchar(alphabet);
+		}
+		alphabet++;
+	}
+       putchar('/n');
+       return (0);
 }
