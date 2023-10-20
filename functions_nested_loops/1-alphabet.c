@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * create the alphabet - print it
+ * create the alphabet - print the alphabet
  * Return: void
  */
 
