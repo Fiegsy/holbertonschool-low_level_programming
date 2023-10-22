@@ -3,10 +3,14 @@
 /**
  * print_sign -> print sign based on condition
  * @n: argument passed
- * Return: 1, 0 -1
+ *
+ * Return: (0) or (1) depending
  */
 
 int print_sign(int n)
+{
+	int negative = -1;
+	char ch = (char) negative;
 
 	if (n > 0)
 {
@@ -21,5 +25,5 @@ else if (n == 0)
 else
 {
 	_putchar('-');
-	return (-1);
+	return (ch);
 }
