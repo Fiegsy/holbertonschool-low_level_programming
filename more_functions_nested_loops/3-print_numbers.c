@@ -1,13 +1,16 @@
-#include <unistd.h>
-
+#include "main.h"
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * print_numbers - print numbers range 0 - 9
  *
- * Return: On success 1.
- * On error, -1 is returned, and error is set appropriately.
+ * Return: no return
  */
-int _putchar(char c)
+void print_numbers(void)
 {
-	return (write(1, &c, 1));
+	int pr;
+
+	for (pr = 48; pr <= 57; pr++)
+	{
+		_putchar(pr);
+	}
+	_putchar('\n');
 }
