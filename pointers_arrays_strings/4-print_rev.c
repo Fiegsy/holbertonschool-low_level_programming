@@ -3,8 +3,7 @@
 
 /**
  * print_rev - Prints a string in reverse
- * @S:
- * the string to print
+ * @s:pointeur
  * Return: void
  */
 
@@ -12,15 +11,14 @@ void print_rev(char *s)
 
 {
 	int c = 0;
+	int j = 0;
 
-	while (s[c] != '\n')
+	while (s[c++])
 	{
-	c++;
+		j++;
 	}
 
-	for (c -= 1; c >= 0; c--)
-	{
-	_putchar(s[c]);
-	}
+	for (c = j - 1; c >= 0; c--)
+		_putchar(s[c]);
 	_putchar('\n');
 }
