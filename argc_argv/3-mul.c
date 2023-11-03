@@ -3,7 +3,7 @@
 /**
  * main - multiplies 2 numbers
  * @argc: number of line argument
- * argv: array that contains the command line
+ * @argv: array that contains the command line
  * return: (0)
  */
 int main(int argc, char *argv[])
