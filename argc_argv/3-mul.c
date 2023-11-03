@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - multiplies 2 numbers
+ * main - multiplies two numbers
  * @argc: number of line argument
  * @argv: array that contains the command line
  * return: (0)
