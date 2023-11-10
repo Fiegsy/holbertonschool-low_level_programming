@@ -3,5 +3,4 @@
 
 #define SUM(x, y) ((x) + (y))
 
-return (0);
 #endif
