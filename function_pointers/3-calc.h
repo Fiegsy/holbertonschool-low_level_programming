@@ -23,4 +23,4 @@ int op_div(int a, int b);
 int op_div(int a, int b);
 int (*get_op_func(char *s))(int, int);
 
-#endif /"CALC_H"/
+#endif /*CALC_H*/
