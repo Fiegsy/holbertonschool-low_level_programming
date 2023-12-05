@@ -1,36 +1,46 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 #include "3-calc.h"
 /**
- * main - check arguments
- * @argc: argument count
- * @argv: arguments vector
+ * main - main
+ * @argc: arg count
+ * @argv: arg array
  *
- * Return: error if number of arguments is wrong
- */
-int main(int argc, char *argv[])
+ * Return: int
+ *
+ **/
+int main(int argc, char **argv)
 {
-	int a = 0, b = 0, res = 0;
-	char s;
+	int inta, intb;
+	int (*f)(int, int);
 
 	if (argc != 4)
 	{
-		printf("Error:n");
-		exit(98);
+		printf("Error\n");
+		return (98);
 	}
-	if (argv[2][1] != '\0')
+
+	f = get_op_func(argv[2]);
+
+	if (f == NULL)
 	{
 		printf("Error\n");
-		exit(99);
+		return (99);
 	}
-	s = argv[2][0];
-	if (s != '+' && s != '_' && s != '/' && s != '*' && s != '%')
+
+	if ((argv[2][0] != '+' && argv[2][0] != '-' && argv[2][0] != '/' &&
+	      argv[2][0] != '*' && argv[2][0] != '%') || strlen(argv[2]) != 1)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-	res = (get_op_func(argv[2]))(a, b);
-	printf("%d\n", res);
-	return (0);
+		inta = atoi(argv[1]);
+		intb = atoi(argv[3]);
+
+		printf("%d\n", f(inta, intb));
+
+		return (0);
+
 }

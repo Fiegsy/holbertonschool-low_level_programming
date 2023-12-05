@@ -1,10 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "3-calc.h"
 /**
- * get_op_func - function selects the correct function to perform
- * @s: operator used
+ * get_op_func - identify function
+ * @s: funct
  *
- * Return: correct function result or NULL if operator is wrong
- */
+ * Return: int
+ *
+ **/
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
@@ -26,5 +29,7 @@ int (*get_op_func(char *s))(int, int)
 		}
 		i++;
 	}
+
+
 	return (NULL);
 }
